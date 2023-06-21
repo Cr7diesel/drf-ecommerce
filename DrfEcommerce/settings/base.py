@@ -19,7 +19,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
     'rest_framework',
+
+    'DrfEcommerce.product.apps.ProductConfig',
 ]
 
 MIDDLEWARE = [
@@ -32,7 +35,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'DRFecommerce.urls'
+ROOT_URLCONF = 'DrfEcommerce.urls'
 
 TEMPLATES = [
     {
@@ -50,7 +53,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'DRFecommerce.wsgi.application'
+WSGI_APPLICATION = 'DrfEcommerce.wsgi.application'
 
 
 AUTH_PASSWORD_VALIDATORS = [

@@ -1,5 +1,5 @@
 """
-WSGI config for DRFecommerce project.
+WSGI config for DrfEcommerce project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'DRFecommerce.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'DrfEcommerce.settings')
 
 application = get_wsgi_application()

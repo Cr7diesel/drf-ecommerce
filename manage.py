@@ -2,15 +2,15 @@
 """Django's command-line utility for administrative tasks."""
 import os
 import sys
-from DRFecommerce.settings import base
+from DrfEcommerce.settings import base
 
 
 def main():
     """Run administrative tasks."""
     if base.DEBUG:
-        os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'DRFecommerce.settings.local')
+        os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'DrfEcommerce.settings.local')
     else:
-        os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'DRFecommerce.settings.production')
+        os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'DrfEcommerce.settings.production')
 
     try:
         from django.core.management import execute_from_command_line
