@@ -2,6 +2,6 @@
 DFR-Ecommerce project 
 API for some products.
 Commands to start:
-docker-compose up -d --build
-docker-compose run web-app sh -c 'python manage.py migrate'
-docker-compose run web-app sh -c 'python manage.py createsuperuser'.
+1. docker-compose up -d --build
+2. docker-compose run web-app sh -c 'python manage.py migrate'
+3. docker-compose run web-app sh -c 'python manage.py createsuperuser'.
